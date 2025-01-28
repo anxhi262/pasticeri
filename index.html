@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasticeria Jonë</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Kryefaqja</a></li>
+                <li><a href="#produkte">Produktet</a></li>
+                <li><a href="#rreth-nesh">Rreth Nesh</a></li>
+                <li><a href="#kontakti">Kontaktet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Kryefaqja -->
+
+    <section id="home">
+    
+                <h1>Mirësevini në Pasticerinë Tonë!</h1>
+                <p>Shijoni ëmbëlsirat më të freskëta dhe më të shijshme në qytet!</p>
+        </div>
+    </section>
+    
+    <!-- Produktet -->
+    <section id="produkte">
+        <h2>Produktet Tona</h2>
+        <div class="produkte">
+            <div class="produkt" onclick="showDetails('Torte me cokollate', 'Krem i shijshëm me çokollatë të errët dhe të bardhë, me një shtresë të butë biskotash. Përbërësit: çokollatë, gjalpë, vezë, sheqer.')">
+                <img src="https://i.pinimg.com/736x/f5/0a/5d/f50a5da743aec8d3d38df1858cecc29c.jpg" alt="Torte me cokollate">
+                <h3>Torte me cokollate</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Torta Frutash', 'Torta me krem frutash të freskëta dhe një shtresë pandispanje. Përbërësit: fruta të freskëta, krem, sheqer.')">
+                <img src="https://i.pinimg.com/736x/a8/77/81/a87781afcba533e857f39dc92d373781.jpg" alt="Torta Frutash">
+                <h3>Torta Frutash</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Biskota Vanilje', 'Biskota të shijshme me shije vaniljeje dhe një shtresë sheqeri në majë. Përbërësit: miell, gjalpë, vanilje, sheqer.')">
+                <img src="https://i.pinimg.com/736x/c8/d4/3b/c8d43bc1b3b2f31ba60776f1503a1f1b.jpg" alt="Biskota Vanilje">
+                <h3>Biskota Vanilje</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Cupcakes Çokollatë', 'Cupcakes të vogla me çokollatë të shijshme dhe krem të butë. Përbërësit: çokollatë, vezë, sheqer, qumësht.')">
+                <img src="https://i.pinimg.com/736x/8a/d2/ed/8ad2edb425a7bdd09204602927a7542c.jpg" alt="Cupcakes Çokollatë">
+                <h3>Cupcakes Çokollatë</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+           
+            <div class="produkt" onclick="showDetails('Trileçe', 'Trileçe e shijshme me tre lloje qumështi dhe krem të butë. Përbërësit: qumësht, vezë, sheqer, miell, vanilje.')">
+                <img src="https://i.pinimg.com/736x/23/8e/72/238e72d6b7e717cc6806bee3c11b3870.jpg" alt="Trileçe">
+                <h3>Trileçe</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Çokollatë Dubai', 'Çokollatë e shijshme me mbushje të pasur me fruta dhe shije tropikale. Përbërësit: çokollatë e errët, mango, papaja, ananas.')">
+                <img src="https://i.pinimg.com/736x/7c/32/d7/7c32d7c3a9ba7d96bdd128550ab4f621.jpg" alt="Çokollatë Dubai">
+                <h3>Çokollatë Dubai</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Torta Red Velvet', 'Torta Red Velvet, me një shtresë të butë kremoze dhe ngjyrë të theksuar të kuqe. Përbërësit: miell, kakao, krem, sheqer.')">
+                <img src="https://i.pinimg.com/736x/d8/6b/7b/d86b7b192d95203f659bb233655e5399.jpg" alt="Torta Red Velvet">
+                <h3>Torta Red Velvet</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Torta Pistachio', 'Torta me krem pistachio dhe një shtresë të hollë çokollate. Përbërësit: pistachio, krem, çokollatë, miell.')">
+                <img src="https://i.pinimg.com/736x/83/80/01/83800112a42009c101e6553aa98f6e5e.jpg" alt="Torta Pistachio">
+                <h3>Torta Pistachio</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+
+            <div class="produkt" onclick="showDetails('Tiramisu', 'Tiramisu klasik me krem mascarpone dhe një shije të theksuar kafeje. Përbërësit: mascarpone, kafe, kaka, bishtajë biskotash.')">
+                <img src="https://i.pinimg.com/736x/af/b4/e7/afb4e777677d23c5010dc1d6af329a43.jpg" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <button class="btn">Shiko Detajet</button>
+            </div>
+        </div>
+
+        <div id="produkt-detaje" class="produkt-detaje">
+            <h3 id="produkt-emri"></h3>
+            <p id="produkt-permbajtja"></p>
+            <button class="btn-close" onclick="closeDetails()">Mbyll</button>
+        </div>
+   
+
+</section>
+
+    <!-- Rreth Nesh -->
+    <section id="rreth-nesh">
+        <h2>Rreth Nesh</h2>
+        <p>Pasticeria jonë është e themeluar për të ofruar ëmbëlsira të shijshme dhe të freskëta. Ne përdorim përbërës të cilësisë më të lartë dhe gjithmonë përpiqemi të ofrojmë përvoja të paharrueshme për klientët tanë.</p>
+        <p> Tradita jonë daton prej 20 vitesh dhe synimi ynë është të sjellim gëzim në tryezën tuaj.</p>
+        <p>Historia jonë filloi në një kuzhinë të vogël familjare, ku pasioni për ëmbëlsirat na frymëzoi të ndajmë recetat tona me komunitetin. Me kalimin e viteve, kemi zgjeruar menu-në dhe kemi krijuar një reputacion të fortë për cilësi dhe shije unike. Pasticeria jonë është vendi ku tradita takohet me kreativitetin për t'ju ofruar produkte që dashurohen nga të gjithë.</p>
+    </section>
+
+    <!-- Kontakti -->
+    <section id="kontakti">
+        <h2>Na Kontaktoni</h2>
+        <form>
+            <label for="emri">Emri:</label>
+            <input type="text" id="emri" name="emri" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mesazhi">Mesazhi:</label>
+            <textarea id="mesazhi" name="mesazhi" required></textarea>
+
+            <button type="submit" class="btn">Dërgo</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
